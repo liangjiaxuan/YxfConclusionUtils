@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/my_dialog_bg"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/txtColor_Black"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_look_see_me"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/txtColor_Black"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbarHeight"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            >
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/txtColor_red"
+                android:layout_toLeftOf="@+id/tv_sure"
+                android:layout_marginRight="50dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/txtColor_red"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
