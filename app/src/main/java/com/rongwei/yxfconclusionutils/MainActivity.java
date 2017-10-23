@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.rongwei.yxfconclusionutils.aui.activity.RecyclerViewAdapterActivity;
+import com.rongwei.yxfconclusionutils.aui.activity.RecyclerviewHelperActivity;
 import com.rongwei.yxfconclusionutils.aui.adapter.MainAdapter;
 
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final Class<?>[]ACTIVITY={ RecyclerViewAdapterActivity.class};
+    private static final Class<?>[]ACTIVITY={ RecyclerviewHelperActivity.class};
 
     @Bind(R.id.lv_main)
     ListView lvMain;

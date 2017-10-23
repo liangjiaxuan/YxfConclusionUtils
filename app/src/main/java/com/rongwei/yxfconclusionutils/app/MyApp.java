@@ -12,7 +12,7 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        CrashHandler instance = CrashHandler.getInstance();
-        instance.init(getApplicationContext());
+//        CrashHandler instance = CrashHandler.getInstance();
+//        instance.init(getApplicationContext());
     }
 }
