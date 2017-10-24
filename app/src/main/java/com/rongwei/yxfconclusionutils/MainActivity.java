@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.rongwei.yxfconclusionutils.aui.activity.RecyclerviewHelperActivity;
+import com.rongwei.yxfconclusionutils.aui.activity.SmartTablelayoutActivity;
 import com.rongwei.yxfconclusionutils.aui.adapter.MainAdapter;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final Class<?>[]ACTIVITY={ RecyclerviewHelperActivity.class};
+    private static final Class<?>[]ACTIVITY={ RecyclerviewHelperActivity.class, SmartTablelayoutActivity.class};
 
     @Bind(R.id.lv_main)
     ListView lvMain;
@@ -44,5 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         data.add("recyclerview adapter");
+        data.add("SmartTableLayout");
+        data.add("PopWindow");
     }
 }

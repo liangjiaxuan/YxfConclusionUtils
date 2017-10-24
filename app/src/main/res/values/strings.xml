@@ -3,4 +3,8 @@
 
     <string name="alert_look_see_me">查看看过我的人需要v2以上用户才能查看，购买2000个金币即自动成为v2会员，金币可以继续购买其他消费</string>
     <string name="network_err">Simulation network error</string>
+    <string name="empty_no_data">暂无数据</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

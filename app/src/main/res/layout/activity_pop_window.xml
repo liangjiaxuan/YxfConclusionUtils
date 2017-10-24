@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pop_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rongwei.yxfconclusionutils.aui.activity.PopWindowActivity">
+
+
+    <TextView
+        android:id="@+id/pop_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="popwindow"
+        android:textAllCaps="false"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/pop_two"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="从底部弹出popwindow"
+        android:textAllCaps="false"
+        android:gravity="center"
+        />
+
+</LinearLayout>

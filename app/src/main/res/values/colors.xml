@@ -11,6 +11,7 @@
     <color name="bg_red_deputy">#ff6633</color>
     <color name="txtColor_White">#ffffff</color>
 
+    <color name="bg_transparent">#0000</color>
 
     <!--rv  adapter helper-->
     <color name="color_light_blue">#00DDB6</color>
@@ -24,4 +25,5 @@
     <color name="hard_color">#48495f</color>
     <color name="clickspan_color">#00ddb6</color>
     <color name="dull_blue">#3B4BBF</color>
+    <color name="txtColor_gray_75">#757575</color>
 </resources>

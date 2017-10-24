@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="发现一个有趣的人"
+            android:textSize="14sp"
+            android:textColor="@color/txtColor_gray_75"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="就是发现一个新世界"
+            android:textSize="14sp"
+            android:textColor="@color/txtColor_gray_75"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赠送你"
+                android:textSize="14sp"
+                android:textColor="@color/txtColor_gray_75"/>
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="36sp"
+                android:textColor="@color/txtColor_red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="把钥匙，"
+                android:textSize="14sp"
+                android:textColor="@color/txtColor_gray_75"/>
+
+            <TextView
+                android:id="@+id/tv_flower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="36sp"
+                android:textColor="@color/txtColor_red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="朵玫瑰花"
+                android:textSize="14sp"
+                android:textColor="@color/txtColor_gray_75"/>
+
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_start_explore"
+            android:text="开始探索"
+            android:textSize="14sp"
+            android:textColor="@color/txtColor_White"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="16dp"
+        android:src="@mipmap/ic_fox" />
+
+</RelativeLayout>

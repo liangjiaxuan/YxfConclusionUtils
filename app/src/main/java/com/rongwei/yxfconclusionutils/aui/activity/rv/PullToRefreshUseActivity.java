@@ -6,6 +6,8 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -20,9 +22,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class PullToRefreshUseActivity extends AppCompatActivity implements BaseQuickAdapter.RequestLoadMoreListener,SwipeRefreshLayout.OnRefreshListener{
-
-    public static final int FRESH_CODE=0;
-    public static final int LOAD_CODE=1;
 
     @Bind(R.id.rv_list)
     RecyclerView rvList;
@@ -55,7 +54,10 @@ public class PullToRefreshUseActivity extends AppCompatActivity implements BaseQ
         adapter.openLoadAnimation(BaseQuickAdapter.SCALEIN);
         adapter.isFirstOnly(false);
         rvList.setAdapter(adapter);
-        initData();
+        if (adapter.getData().size()<=0) {
+            View emptyView = LayoutInflater.from(this).inflate(R.layout.empty_view, null);
+            adapter.setEmptyView(emptyView);
+        }
     }
 
     @Override
@@ -102,9 +104,7 @@ public class PullToRefreshUseActivity extends AppCompatActivity implements BaseQ
                 adapter.setEnableLoadMore(true);
             }
         }, delayMillis);
-
     }
-
 
     private void loadData() {
         new Handler().postDelayed(new Runnable() {

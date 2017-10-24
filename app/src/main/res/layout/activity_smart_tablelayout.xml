@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_smart_tablelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rongwei.yxfconclusionutils.aui.activity.SmartTablelayoutActivity">
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="152dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="24dp"
+        android:clipToPadding="false"
+        app:stl_customTabTextLayoutId="@layout/custom_tab"
+        app:stl_customTabTextViewId="@+id/custom_text"
+        app:stl_defaultTabTextHorizontalPadding="0dp"
+        app:stl_dividerColor="@color/bg_transparent"
+        app:stl_dividerThickness="0dp"
+        app:stl_indicatorColor="#ff5252"
+        app:stl_indicatorCornerRadius="4dp"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorInterpolation="linear"
+        app:stl_indicatorThickness="24dp"
+        app:stl_underlineColor="@color/bg_transparent"
+        app:stl_underlineThickness="0dp"
+        android:background="@drawable/shape_rg_message"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewpagertab"
+        />
+</RelativeLayout>

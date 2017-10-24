@@ -24,7 +24,9 @@
         <activity android:name=".aui.activity.rv.MultipleItemUseActivity" />
         <activity android:name=".aui.activity.rv.HeaderAndFooterUseActivity" />
         <activity android:name=".aui.activity.rv.PullToRefreshUseActivity" />
-        <activity android:name=".aui.activity.rv.EmptyViewUseActivity"></activity>
+        <activity android:name=".aui.activity.rv.EmptyViewUseActivity" />
+        <activity android:name=".aui.activity.SmartTablelayoutActivity" />
+        <activity android:name=".aui.activity.PopWindowActivity"></activity>
     </application>
 
 </manifest>
