@@ -18,7 +18,8 @@
             android:layout_marginTop="24dp"
             android:text="发现一个有趣的人"
             android:textSize="14sp"
-            android:textColor="@color/txtColor_gray_75"/>
+            android:textColor="@color/txtColor_gray_75"
+            android:id="@+id/textView" />
 
         <TextView
             android:layout_width="wrap_content"

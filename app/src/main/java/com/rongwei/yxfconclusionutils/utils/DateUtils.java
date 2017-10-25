@@ -58,4 +58,11 @@ public class DateUtils {
         return times;
     }
 
+    public static String getFormatTimeWeekday(long time){
+        String times="";
+        SimpleDateFormat format=new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss EEEE");
+        times=format.format(new Date(time));
+        return times;
+    }
+
 }

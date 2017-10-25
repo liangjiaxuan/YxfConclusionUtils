@@ -2,14 +2,19 @@ package com.rongwei.yxfconclusionutils;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.rongwei.yxfconclusionutils.aui.activity.CustomDialogActivity;
+import com.rongwei.yxfconclusionutils.aui.activity.DateAndTimeUtilsActivity;
+import com.rongwei.yxfconclusionutils.aui.activity.NetStateActivity;
+import com.rongwei.yxfconclusionutils.aui.activity.NotificationUtilsActivity;
+import com.rongwei.yxfconclusionutils.aui.activity.PopWindowActivity;
 import com.rongwei.yxfconclusionutils.aui.activity.RecyclerviewHelperActivity;
 import com.rongwei.yxfconclusionutils.aui.activity.SmartTablelayoutActivity;
 import com.rongwei.yxfconclusionutils.aui.adapter.MainAdapter;
+import com.rongwei.yxfconclusionutils.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +22,10 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
-    private static final Class<?>[]ACTIVITY={ RecyclerviewHelperActivity.class, SmartTablelayoutActivity.class};
+    private static final Class<?>[]ACTIVITY={ RecyclerviewHelperActivity.class, SmartTablelayoutActivity.class, CustomDialogActivity.class,
+            NotificationUtilsActivity.class,PopWindowActivity.class ,DateAndTimeUtilsActivity.class, NetStateActivity.class};
 
     @Bind(R.id.lv_main)
     ListView lvMain;
@@ -46,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         data.add("recyclerview adapter");
         data.add("SmartTableLayout");
+        data.add("custom Dialog");
+        data.add("notification utils");
         data.add("PopWindow");
+        data.add("dateAndTimeUtils");
+        data.add("net State");
     }
 }

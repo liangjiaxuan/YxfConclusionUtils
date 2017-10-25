@@ -16,6 +16,7 @@ import com.rongwei.yxfconclusionutils.aui.activity.rv.HeaderAndFooterUseActivity
 import com.rongwei.yxfconclusionutils.aui.activity.rv.MultipleItemUseActivity;
 import com.rongwei.yxfconclusionutils.aui.activity.rv.PullToRefreshUseActivity;
 import com.rongwei.yxfconclusionutils.aui.adapter.rvadapter.HomeAdapter;
+import com.rongwei.yxfconclusionutils.base.BaseActivity;
 import com.rongwei.yxfconclusionutils.bean.rvbean.HomeItem;
 import java.util.ArrayList;
 
@@ -23,7 +24,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
-public class RecyclerviewHelperActivity extends AppCompatActivity {
+public class RecyclerviewHelperActivity extends BaseActivity {
     private static final Class<?>[] ACTIVITY = {AnimationUseActivity.class, MultipleItemUseActivity.class, HeaderAndFooterUseActivity.class, PullToRefreshUseActivity.class,  EmptyViewUseActivity.class};
     private static final String[] TITLE = {"Animation", "MultipleItem", "Header/Footer", "PullToRefresh", "EmptyView"};
     private static final int[] IMG = {R.mipmap.gv_animation, R.mipmap.gv_multipleltem, R.mipmap.gv_header_and_footer, R.mipmap.gv_pulltorefresh, R.mipmap.gv_empty};

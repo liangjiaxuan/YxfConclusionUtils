@@ -11,12 +11,13 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 import com.rongwei.yxfconclusionutils.R;
 import com.rongwei.yxfconclusionutils.aui.fragment.smarttable.FriendFragment;
 import com.rongwei.yxfconclusionutils.aui.fragment.smarttable.MessageFragment;
+import com.rongwei.yxfconclusionutils.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class SmartTablelayoutActivity extends AppCompatActivity {
+public class SmartTablelayoutActivity extends BaseActivity {
 
     private ViewPager viewpager;
     private SmartTabLayout tab;

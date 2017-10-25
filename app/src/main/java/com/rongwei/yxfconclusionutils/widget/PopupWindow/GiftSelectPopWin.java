@@ -12,6 +12,10 @@ import android.widget.TextView;
 
 import com.rongwei.yxfconclusionutils.R;
 
+import static com.rongwei.yxfconclusionutils.R.id.bt_recharge;
+import static com.rongwei.yxfconclusionutils.R.id.tv_key;
+import static com.rongwei.yxfconclusionutils.R.id.tv_question_sen;
+
 
 /**
  * Created by Administrator on 2017/7/27.
@@ -22,16 +26,16 @@ public class GiftSelectPopWin extends PopupWindow {
     private Context mContext;
 
     public View view;
-    public TextView tv_amount,tv_question_sen;
-    public Button bt_recharge;
+    public TextView tv_key,tv_flower;
+    public Button bt_start;
 
 
     public GiftSelectPopWin(Context mContext, View.OnClickListener itemsOnClick) {
 
-        this.view = LayoutInflater.from(mContext).inflate(R.layout.gift_select_selet, null);
-        tv_amount= (TextView) view.findViewById(R.id.tv_amount);
-        tv_question_sen= (TextView) view.findViewById(R.id.tv_question_sen);
-        bt_recharge= (Button) view.findViewById(R.id.bt_recharge);
+        this.view = LayoutInflater.from(mContext).inflate(R.layout.layout_login_reward, null);
+        tv_key= (TextView) view.findViewById(R.id.tv_key);
+        tv_flower= (TextView) view.findViewById(R.id.tv_flower);
+        bt_start= (Button) view.findViewById(R.id.bt_start);
 
 //        btn_take_photo = (Button) view.findViewById(R.id.btn_take_photo);
 //        btn_pick_photo = (Button) view.findViewById(R.id.btn_pick_photo);
