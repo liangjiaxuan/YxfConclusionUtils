@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 import com.rongwei.yxfconclusionutils.aui.activity.CustomDialogActivity;
 import com.rongwei.yxfconclusionutils.aui.activity.DateAndTimeUtilsActivity;
+import com.rongwei.yxfconclusionutils.aui.activity.MyPermissionActivity;
 import com.rongwei.yxfconclusionutils.aui.activity.NetStateActivity;
 import com.rongwei.yxfconclusionutils.aui.activity.NotificationUtilsActivity;
 import com.rongwei.yxfconclusionutils.aui.activity.PopWindowActivity;
@@ -25,7 +25,8 @@ import butterknife.ButterKnife;
 public class MainActivity extends BaseActivity {
 
     private static final Class<?>[]ACTIVITY={ RecyclerviewHelperActivity.class, SmartTablelayoutActivity.class, CustomDialogActivity.class,
-            NotificationUtilsActivity.class,PopWindowActivity.class ,DateAndTimeUtilsActivity.class, NetStateActivity.class};
+            NotificationUtilsActivity.class,PopWindowActivity.class ,DateAndTimeUtilsActivity.class, NetStateActivity.class,
+            MyPermissionActivity.class};
 
     @Bind(R.id.lv_main)
     ListView lvMain;
@@ -57,5 +58,6 @@ public class MainActivity extends BaseActivity {
         data.add("PopWindow");
         data.add("dateAndTimeUtils");
         data.add("net State");
+        data.add("动态添加权限");
     }
 }

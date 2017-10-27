@@ -3,6 +3,7 @@
     package="com.rongwei.yxfconclusionutils">
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -30,7 +31,9 @@
         <activity android:name=".aui.activity.DateAndTimeUtilsActivity" />
         <activity android:name=".aui.activity.NetStateActivity" />
         <activity android:name=".aui.activity.CustomDialogActivity" />
-        <activity android:name=".aui.activity.NotificationUtilsActivity"></activity>
+        <activity android:name=".aui.activity.NotificationUtilsActivity" />
+        <activity android:name=".permission.PermissionsActivity" />
+        <activity android:name=".aui.activity.MyPermissionActivity"></activity>
     </application>
 
 </manifest>
